@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>My weather app</title>
+</head>
+<body>
+  <div class="weather-app">
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+   
+<main>
+  <div class="current-weather">
+    <div>
+      <h1 class="current-city" id="current-city-main"> East London</h1>
+      <p class="current-details">
+        <span id="current-date-main">
+          </span>, <span id="description-main"></span> <br />
+      </p>
+    </div>
+    <div class="current-temperature">
+      <span class="current-temperature-icon" id="weather-icon-main">☀️</span>
+      <span class="current-temperature-value" id="current-temperature-main">20</span>
+      <span class="current-temperature-unit">°C</span>
+    </div>
+  </div>
+
+  <div class="weather-icon-container">
+    <span class="current-temperature-icon" id="weather-icon-details"></span>
+  </div>
+  <p class="current-details" id="weather-details">
+    <span id="current-date-details">Sunday</span>, <span id="description-details"></span> <br />
+    Humidity: <strong id="humidity-details">8.3</strong>, Wind: <strong id="wind-speed-details">10,8</strong>
+  </p>
+
+  <div class="weather-forecast"id=forecast></div>
+
+    <footer>
+      <p>
+        App Built by
+        <a href="https://app.netlify.com/sites/jazzy-rolypoly-d8555c/overview" target="_blank">Yonela Mkrola</a>
+        is open sourced  
+        <a href="https://github.com/Y-Mkrola/Project/commit/5f8574cca1eeb5a774d9e69961f8d227f99d7588" target="_blank">on GitHub</a>
+        and
+        <a href="https://jazzy-rolypoly-d8555c.netlify.app/" target="_blank">Hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/95094224.jpg?k=b5a0a13e41773dde7bb2496759d04ce702cdbb4a4dfc29229b6c5ca28bfb705b&o=&hp=1);
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: #885df1;
+  }
+  
+  .weather-app {
+    background: url(https://blog.joffeemergencyservices.com/hubfs/maxresdefault.jpg);
+    width: 600px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    text-shadow: 1px 1px 5px #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration-color: #f9f7fe;
+  }
+  
+  header {
+    border-bottom: 1px solid #f9f7fe;
+    padding-bottom: 30px;
+  }
+  
+  .search-input {
+    background-color: #f9f7fe;
+    border: none;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    padding: 20px;
+    width: 75%;
+    border-radius: 6px;
+  }
+  
+  .search-button {
+    margin-left: 5px;
+    font-size: 16px;
+    background-color: #885df1;
+    color: white;
+    border: none;
+    padding: 20px;
+    line-height: 1;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 30px 0;
+  }
+  
+  .current-temperature {
+    font-size: 48px;
+  }
+  
+  .current-weather {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .current-city {
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
+  }
+  
+  .current-details {
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .current-details strong {
+    color: orange;
+  }
+  
+  .current-temperature-icon {
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .current-temperature-value {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  
+  .current-temperature-unit {
+    font-size: 28px;
+    position: relative;
+    top: -38px;
+  }
+  
+  footer {
+    border-top: 1px solid #f9f7fe;
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+  }
+  .weather-forecast-date {
+    font-size: 16px;
+  color: blueviolet;
+  opacity: 0.5;
+  }
+  .weather-forecast-tempreture{
+    font-size: 13px;
+  }
+  .weather-forecast{
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    display: flex;
+  }
+  .weather-forecast-tempreture-min{
+    opacity: 0.5;
+  }
+  .weather-forecast-day {
+    margin-bottom: 10px; 
+  }
