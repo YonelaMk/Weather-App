@@ -1,5 +1,5 @@
 body {
-    background:whitesmoke;
+    background:url(https://thumbs.dreamstime.com/b/earth-africa-15052543.jpg);
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
   }
@@ -10,7 +10,7 @@ body {
   
   .weather-app {
     background: url(https://png.pngtree.com/thumb_back/fh260/background/20201012/pngtree-white-cloud-on-blue-sky-weather-background-image_410050.jpg);
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     padding: 25px 30px;
     border-radius: 12px;
@@ -123,3 +123,39 @@ body {
   .weather-forecast-day {
     margin-bottom: 10px; 
   }
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.weather-icon.rain {
+    animation: rainAnimation 1s infinite;
+}
+
+.weather-icon.cloud {
+    animation: cloudAnimation 3s infinite;
+}
+
+.weather-icon.sun {
+    animation: sunAnimation 2s infinite;
+}
+
+/* Rain animation */
+@keyframes rainAnimation {
+    from { transform: translateY(0); }
+    to { transform: translateY(10px); }
+}
+
+/* Cloud animation */
+@keyframes cloudAnimation {
+    0% { background-position: 0; }
+    100% { background-position: 100%; }
+}
+
+/* Sun animation */
+@keyframes sunAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
